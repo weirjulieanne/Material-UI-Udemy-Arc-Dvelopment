@@ -16,4 +16,19 @@ export default createTheme({
       main: `${arcOrange}`,
     },
   },
+  typography: {
+    tab: {
+      fontFamily: "Raleway",
+      textTransform: "none",
+      fontWeight: "700",
+      fontSize: "1rem",
+      color: "white",
+    },
+    estimate: {
+      fontFamily: "Pacifico",
+      fontSize: "1rem",
+      textTransform: "none",
+      color: "white",
+    },
+  },
 });
