@@ -14,7 +14,6 @@ function ElevationScroll(props) {
   const trigger = useScrollTrigger({
     disableHysteresis: true,
     threshold: 0,
-    // target: window ? window() : undefined,
   });
 
   return React.cloneElement(children, {
@@ -50,9 +49,9 @@ const StyledButton = styled(Button)(({ theme }) => ({
 
 function Header(props) {
   const classes = useStyles();
-  const [value, setValue] = useState("0");
+  const [value, setValue] = useState("zero");
 
-  const handleChange = (e, newValue) => {
+  const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
@@ -114,11 +113,11 @@ function Header(props) {
               onChange={handleChange}
               value={value}
             >
-              <StyledTab value={0} label="Home" />
-              <StyledTab value={1} label="Services" />
-              <StyledTab value={2} label="The Revolution" />
-              <StyledTab value={3} label="About Us" />
-              <StyledTab value={4} label="Contact Us" />
+              <StyledTab value={"zero"} label="Home" />
+              <StyledTab value={"one"} label="Services" />
+              <StyledTab value={"two"} label="The Revolution" />
+              <StyledTab value={"three"} label="About Us" />
+              <StyledTab value={"four"} label="Contact Us" />
             </Tabs>
             <StyledButton
               variant="contained"
