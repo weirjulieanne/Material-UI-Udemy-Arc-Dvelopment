@@ -112,12 +112,30 @@ function Header(props) {
               className={classes.tabContainer}
               onChange={handleChange}
               value={value}
+              indicatorColor="primary"
+              textColor="white"
             >
-              <StyledTab value={"zero"} label="Home" />
-              <StyledTab value={"one"} label="Services" />
-              <StyledTab value={"two"} label="The Revolution" />
-              <StyledTab value={"three"} label="About Us" />
-              <StyledTab value={"four"} label="Contact Us" />
+              <StyledTab className={classes.tab} value={"zero"} label="Home" />
+              <StyledTab
+                className={classes.tab}
+                value={"one"}
+                label="Services"
+              />
+              <StyledTab
+                className={classes.tab}
+                value={"two"}
+                label="The Revolution"
+              />
+              <StyledTab
+                className={classes.tab}
+                value={"three"}
+                label="About Us"
+              />
+              <StyledTab
+                className={classes.tab}
+                value={"four"}
+                label="Contact Us"
+              />
             </Tabs>
             <StyledButton
               variant="contained"
